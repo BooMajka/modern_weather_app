@@ -15,6 +15,7 @@ var loadCities = function() {
         savedCity.forEach(el => {
 
             var button = document.createElement("button");
+            button.classList.add("button-15");
             var cityName = el.slice(0,1).toUpperCase() + el.slice(1);
             button.textContent = cityName;
             var apiUrl =
